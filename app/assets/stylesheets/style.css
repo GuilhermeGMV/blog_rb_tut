@@ -1,0 +1,34 @@
+body {
+    background-color: black;               
+    color: white;                  
+    text-align: center; 
+}
+a {
+    text-decoration: none;      
+    font-family: Arial;         
+    font-size: 20px;            
+    font-weight: bold;          
+}
+a:link {             
+    color: white;
+}
+a:hover {
+    color:purple;
+}
+a:visited {
+    color: clear;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+table {
+    border-collapse: collapse;
+}
+td, th {
+    padding: 10px 20px;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+}
+
