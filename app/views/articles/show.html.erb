@@ -6,6 +6,32 @@
   <div class="text_content"><%= @article.text %></div>
 </div>
 
+<div class="rating_show">
+  <% unless @article.ratings.nil? %>
+    <% @article.ratings.to_i.times do %>
+      <i class="bi bi-star-fill"></i>
+    <% end %>
+
+    <% (5 - @article.ratings.to_i).times do %>
+      <i class="bi bi-star"></i>
+    <% end %>
+  <% else %>
+    <% 5.times do %>
+      <i class="bi bi-star"></i>
+    <% end %>
+  <% end %>
+</div>
+
+<div class="rating_form">
+  <h3>Dar nota ao artigo:</h3>
+  <%= form_with model: @article, url: article_path(@article), method: :patch do |form| %>
+    <%= form.label :ratings, "Avaliação (0 a 5 estrelas)" %><br>
+    <%= form.number_field :ratings, in: 0..5, step: 1 %>
+    <%= form.submit "Enviar Avaliação" %>
+
+  <% end %>
+</div>
+
 <div class="comment_section">
   <h2>Comments:</h2>
   <%= render @article.comments %>

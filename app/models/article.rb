@@ -9,5 +9,5 @@ class Article < ApplicationRecord
   
     self.title = title.strip.sub(/\A\w/) { |c| c.upcase }
   end
-
+  
 end

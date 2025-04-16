@@ -186,3 +186,7 @@ a.delete_comment_link:hover {
     margin-bottom: 10px;
     border-radius: 10px;
 }
+.rating_show{
+    text-align: left;
+    margin-left: 20px;
+}

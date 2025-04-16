@@ -6,12 +6,14 @@
     <tr>
       <th>Title</th>
       <th>Text</th>
+      <th>Rating</th>
       <th colspan="3"></th>
     </tr>
     <% @articles.each do |article| %>
       <tr>
         <td><%= article.title %></td>
         <td><%= truncate(article.text, length: 100) %></td>
+        <td><%= article.ratings %></td>
         <td><%= link_to 'Show', article_path(article) %></td>
         <td><%= link_to 'Edit', edit_article_path(article) %></td>
         <td><%= link_to 'Delete', article_path(article),
