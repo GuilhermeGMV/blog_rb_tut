@@ -1,34 +1,188 @@
 body {
-    background-color: black;               
-    color: white;                  
-    text-align: center; 
+    background-color: rgb(20, 20, 20);
+    color: white;
+    text-align: center;
 }
+
 a {
-    text-decoration: none;      
-    font-family: Arial;         
-    font-size: 20px;            
-    font-weight: bold;          
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
 }
-a:link {             
+
+a:link {
     color: white;
 }
+
 a:hover {
-    color:purple;
+    color: purple;
 }
+
 a:visited {
     color: clear;
 }
+
 .container {
     display: flex;
     justify-content: center;
     margin-top: 30px;
 }
+
 table {
     border-collapse: collapse;
 }
+
 td, th {
     padding: 10px 20px;
     border-bottom: 1px solid #ccc;
     text-align: center;
 }
 
+.form_container {
+    display: flex;
+    justify-content: center;
+}
+
+.form_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    max-width: 700px;
+}
+
+.title_field {
+    align-self: flex-start;
+    padding: 10px 0;
+    width: 50%;
+    font-family: Arial, sans-serif;
+}
+
+.title_field input {
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.title_field label {
+    display: block;
+    text-align: left;
+    margin-left: 10px;
+    margin-bottom: -10px;
+}
+
+.text_area_field {
+    width: 100%;
+    padding: 10px 0;
+    font-family: Arial, sans-serif;
+    align-self: left;
+}
+
+.text_area_field textarea {
+    width: 100%;
+    resize: vertical;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.submit_button {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-family: Arial, sans-serif;
+}
+h1{
+    margin-top: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.error_explanation {
+    background-color: #330000;
+    border: 1px solid #ff4d4d;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    color: #ff9999;
+    width: 90%;
+    max-width: 600px;
+    text-align: left;
+    font-family: Arial, sans-serif;
+}
+
+.error_explanation h2 {
+    color: #ff4d4d;
+    font-size: 18px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+
+.error_explanation ul {
+    list-style: disc inside;
+    padding-left: 0;
+}
+
+.error_explanation li {
+    margin-bottom: 5px;
+}
+
+td {
+    word-wrap: break-word;  
+    white-space: normal; 
+    max-width: 300px; 
+  }
+  
+.title_field_show {
+margin-bottom: 20px;
+font-family: Arial, sans-serif;
+}
+
+.text_area_field_show {
+font-family: Arial, sans-serif;
+}
+
+.text_area_field_show .text_content {
+    white-space: pre-wrap;       
+    word-wrap: break-word;       
+    max-width: 1000px;
+    padding: 10px 0;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.comment_section{
+    text-align: left;
+    margin-left: 20px;
+}
+
+.commenter_area input,
+.com_text_area textarea {
+  width: 100%;
+  max-width: 200px; 
+  font-family: Arial, sans-serif;
+  padding: 4px;
+  font-size: 12px;
+}
+.comment_body{
+    white-space: pre-wrap;       
+    word-wrap: break-word;       
+    max-width: 800px;
+    padding: 10px 0;
+    margin: 0 auto;
+    text-align: left;
+    margin-left: 0;          
+}
+a.delete_comment_link {
+    color: #000000;
+    font-size: 14px;
+}
+a.delete_comment_link:hover {
+    color: #272727;
+}
+.comments_form{
+    background-color: rgb(102, 102, 102);
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}

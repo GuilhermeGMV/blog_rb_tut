@@ -1,15 +1,18 @@
-<p>
-  <strong>Commenter:</strong>
-  <%= comment.commenter %>
-</p>
- 
-<p>
-  <strong>Comment:</strong>
-  <%= comment.body %>
-</p>
+<div class="comments_form">
+  <p>
+    <strong>Commenter:</strong>
+    <%= comment.commenter %>
+  </p>
+  
+  <p>
+    <strong>Comment:</strong>
+    <div class="comment_body"><%= comment.body %></div>
+  </p>
 
-<p>
-  <%= link_to 'Delete Comment', [comment.article, comment],
-               method: :delete,
-               data: { confirm: 'Are you sure?' } %>
-</p>
+  <div>
+    <%= link_to 'Delete Comment', [comment.article, comment],
+            method: :delete,
+            data: { confirm: 'Are you sure?' },
+            class: 'delete_comment_link' %>
+  </div>
+</div>

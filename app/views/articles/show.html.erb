@@ -1,18 +1,18 @@
-<p>
-  <strong>Title:</strong>
-  <%= @article.title %>
-</p>
- 
-<p>
-  <strong>Text:</strong>
-  <%= @article.text %>
-</p>
+<div class="title_field_show">
+  <strong><%= @article.title %></strong><br>
+</div>
 
-<h2>Comments</h2>
-<%= render @article.comments %>
+<div class="text_area_field_show">
+  <div class="text_content"><%= @article.text %></div>
+</div>
+
+<div class="comment_section">
+  <h2>Comments:</h2>
+  <%= render @article.comments %>
+  
+  <h2>Add a comment:</h2>
+  <%= render 'comments/form' %>
+</div>
  
-<h2>Add a comment:</h2>
-<%= render 'comments/form' %>
- 
-<%= link_to 'Edit', edit_article_path(@article) %> |
+<%= link_to 'Edit', edit_article_path(@article) %>&emsp;
 <%= link_to 'Back', articles_path %>
